@@ -1,5 +1,7 @@
 # cwss boilerplate
 My Node/Webpack boilerplate V1. 
+To be continued, but parking for now - I will clone this to start my new folio. Will be updated to use as a generic starter.
+
 Contains:
 - Express
 - Node
