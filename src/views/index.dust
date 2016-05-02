@@ -5,14 +5,17 @@
 </head>
 <body>
 {>_header/}
-<h2><span class="special2">Hello</span>, my name is {title}, I am a {job}</h2>
+<h2>{title} is a <span class="special">{job}</span></h2>
+<p id="greeting"></p>
 <div class="background"></div>
+<small class="caption">(Above image is below 8k, so inlined base64)</small>
 <div class="backgroundHi"></div>
-<span>Currently</span> fiddling with:
+<small class="caption">(Above image is above 8k, so optimized but not inlined)</small>
+He likes:
 <ul>
-    {#techs}
+    {#likes}
         <li>{.}</li>
-    {/techs}
+    {/likes}
 </ul>
 {>_footer/}
 {>_end_content/}

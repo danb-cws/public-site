@@ -1,7 +1,7 @@
 {
-  "name": "cwss-public",
-  "version": "0.0.1",
-  "description": "Code Workshop Systems Ltd public site using Express",
+  "name": "danb-webpack-boilerplate",
+  "version": "0.1.0",
+  "description": "Webpack boilerplate",
   "main": "./src/server.js",
   "devDependencies": {
     "eslint": "^2.4.0",
@@ -42,32 +42,26 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/danb-cws/public_site"
+    "url": "https://github.com/danb-cws/webpack_boilerplate_v1"
   },
   "scripts": {
-    "start": "node /src/server.js",
-    "test-compress": "node ./src/testgzip.js",
     "start-dev": "SET NODE_ENV=development&& node ./src/server.js",
     "start-prod": "SET NODE_ENV=production&& node ./src/server.js",
-    "compress-check": "SET DEBUG=compression&& node ./src/server.js",
     "webpack": "webpack",
     "webpack-check": "webpack --display-error-details --config webpack.prod.config.js",
     "lint": "eslint src/js/",
-    "sass": "node-sass --output-style expanded --source-map dist/css/ -o dist/css/ src/sass/",
-    "watch-sass": "nodemon -e scss -x \"npm run sass\"",
-    "dust": "dust-compiler -s src/templates/ -d dist/views/ --nonotify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "Dan",
     "Brown",
     "Boilerplate",
+    "Webpack",
     "Node",
     "Express",
-    "Heroku",
     "PostCSS"
   ],
   "author": "Dan Brown",
   "license": "MIT",
-  "homepage": "https://github.com/danb-cws/public_site#readme"
+  "homepage": "https://github.com/danb-cws/webpack_boilerplate_v1#readme"
 }

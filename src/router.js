@@ -2,6 +2,7 @@
 
 const express = require('express');
 const router = express.Router();// eslint-disable-line new-cap
+const staticDataImport = require('./data/static_data');
 
 router.templateConfig = {
   devMode: false,
@@ -10,22 +11,21 @@ router.templateConfig = {
 
 router.get('/hello', (req, res) => {
   let result = '';
-  result = '<h1>hulloo wurld</h1>';
+  result = '<h1>hello world</h1>';
   res.send(result);
 });
 
 router.get('/', (req, res) => {
   res.render('index', {
     config: router.templateConfig,
-    pageTitle: ' - index page',
-    title: 'dan',
-    job: 'fe dev',
-    techs: [
-      'Node',
-      'Express',
-      'Dust',
-      'Webpack',
-      'Tooling and boilerplate',
+    staticData: staticDataImport,
+    pageTitle: 'Mickey\'s page',
+    title: 'Mickey',
+    job: 'Mouse',
+    likes: [
+      'Eating cheese',
+      'Chasing Minne',
+      'Hanging out with Donald',
     ],
   });
 });

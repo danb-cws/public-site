@@ -1,21 +1,18 @@
-// export.name = 'dan'; breaks
-export const name = 'dan';
-// require('../sass/base.scss'); can use either?
-import '../sass/alt.scss';
+export const name = 'Michael';
 
-// module.exports.sayName = function () {
+// require('../sass/greeting.scss'); can use either form
+import '../sass/greeting.scss';
+
 export function sayName() {
-  console.log(`in sayName, Yo: ${name}`);
+  return (`Yo, my name is: ${name}`);
 }
 
-/* module.exports.sayName2 = function () {
-  console.log('in sayName2');
-  this.sayName();
-};*/
+export function printName() {
+  const greetspot = document.getElementById('greeting');
+  greetspot.innerHTML = sayName();
+}
 
-// exports.sayName2 = () => {
-export function sayName2() {
-  // console.log('in sayName2');
-  sayName();
+export default function () {
+  console.log('I am the default module export from testvar.js');
 }
 
