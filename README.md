@@ -1,5 +1,7 @@
 # Node/Express/Webpack Boilerplate
 
+A bare-bones starter project with server and client code aiming to be an introduction to the Webpack workflow. TBC.
+
 ###Featuring:
 - **Node**
 - **Express** - Node based server
