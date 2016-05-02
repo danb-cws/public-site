@@ -21,6 +21,7 @@
 - in the working dir, run in terminal _npm install_
 - for dev build, run _npm run start-dev_
 - for prod build, run _npm run start-prod_
+- _Ctrl+C_ to stop
 - open _localhost:5000_ in your browser
 
 ###Exploring
@@ -40,7 +41,7 @@
 - In dev build, Webpack will serve from memory. In prod, assets will be served from ./dist/ directory. This will be destroyed on each build. For this reason in dev build there will be NO DIST directory. (This behaviour may have to be revisited if the build gets too slow)
 
 ###Gotchas:
-- To pass enviromment variables Windows users will have to amend lines in the scripts block of package.json from eg:
+- To pass enviromment variables Windows users will have to amend from export to set in the scripts block of package.json from eg:
 
     "start-dev": "export NODE_ENV=development&& node ./src/server.js",<br/>to:<br/> 
     "start-dev": "SET NODE_ENV=development&& node ./src/server.js",
