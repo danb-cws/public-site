@@ -40,7 +40,7 @@ A bare-bones starter project with server and client code aiming to be an introdu
   * Various other optimisations
   
 ###Notes
-- In dev build, Webpack will serve from memory. In prod, assets will be served from ./dist/ directory. This will be destroyed on each build. For this reason in dev build there will be NO DIST directory. (This behaviour may have to be revisited if the build gets too slow)
+- In dev build, Webpack will serve from memory (for this reason, you may notice FOUT). In prod, optimised assets will be served from ./dist/ directory. This will be destroyed on each build. For this reason in dev build there will be NO DIST directory. (This behaviour may have to be revisited if the build gets too slow)
 
 ###Gotchas:
 - To pass enviromment variables Windows users will have to amend from export to set in the scripts block of package.json from eg:
