@@ -43,10 +43,12 @@ A bare-bones starter project with server and client code aiming to be an introdu
 - In dev build, Webpack will serve from memory (for this reason, you may notice FOUT). In prod, optimised assets will be served from ./dist/ directory. This will be destroyed on each build. For this reason in dev build there will be NO DIST directory. (This behaviour may have to be revisited if the build gets too slow)
 
 ###Gotchas:
-- To pass enviromment variables Windows users will have to amend from export to set in the scripts block of package.json from eg:
+- To pass enviromment variables Windows users will have to amend from export to SET in the scripts block of package.json from eg:
 
     "start-dev": "export NODE_ENV=development&& node ./src/server.js",<br/>to:<br/> 
     "start-dev": "SET NODE_ENV=development&& node ./src/server.js",
+    
+    For Mac users, vice versa, edit to "export" from "SET"
     
     Please note the lack of a space before &&
 - Antivirus may break hot reload (exclude your working dir from your AV)
