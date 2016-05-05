@@ -9,7 +9,7 @@ import * as greet from './testvar';
 greet.default();
 greet.printName();
 
-// this is required in the entrypoint for HMR to work. It will be removed by minification in prod as its effectivley orphan code
+// this is required in the entrypoint for HMR to work. It will be removed by minification in prod as its 'unreachable' code
 if (module.hot) {
   module.hot.accept();
 }
