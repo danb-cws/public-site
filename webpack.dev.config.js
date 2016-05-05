@@ -16,6 +16,7 @@ module.exports = {
     publicPath: 'http://localhost:5000/', // absolute path req here for images in css to work with sourcemaps on. Must be actual numeric ip to access on lan. TODO: assign at runtime
     filename: 'js/[name].js',
   },
+  profile: true, // show times for build of each module etc
   devtool: 'source-map',
   eslint: {
     configFile: './.eslintrc',

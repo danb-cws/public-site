@@ -47,8 +47,7 @@
   "scripts": {
     "start-dev": "export NODE_ENV=development&& node ./src/server.js",
     "start-prod": "export NODE_ENV=production&& node ./src/server.js",
-    "webpack-profile": "webpack --profile --display-modules  --config webpack.dev.config.js",
-    "webpack-check": "webpack --display-error-details --config webpack.prod.config.js",
+    "webpack-check": "webpack --display-error-details --config webpack.dev.config.js",
     "lint": "eslint src/js/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
