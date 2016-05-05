@@ -38,7 +38,7 @@ module.exports = {
         test: /.*\.(gif|png|jpe?g|svg)$/i,
         exclude: /node_modules/,
         loaders: [
-          'url?limit=8192&name=[path][name].[ext]?[hash]',
+          'url?limit=8192&name=[path][name].[ext]',
           'image-webpack?{progressive:true, optimizationLevel: 3, interlaced: false, pngquant:{quality: "65-80", speed: 4}}',
         ],
       },
