@@ -16,7 +16,7 @@ module.exports = {
     publicPath: 'http://localhost:5000/', // absolute path req here for images in css to work with sourcemaps on. Must be actual numeric ip to access on lan. TODO: assign at runtime
     filename: 'js/[name].js',
   },
-  profile: true, // show times for build of each module etc
+  profile: true, // show times for build of each chunk etc, to debug slow builds
   devtool: 'source-map',
   eslint: {
     configFile: './.eslintrc',
@@ -40,7 +40,7 @@ module.exports = {
         exclude: /node_modules/,
         loaders: [
           'url?limit=8192&name=[path][name].[ext]',
-          'image-webpack?{progressive:true, optimizationLevel: 3, interlaced: false, pngquant:{quality: "65-80", speed: 4}}',
+          'image-webpack?{progressive:true, optimizationLevel: 2, pngquant:{quality: "65-80", speed: 6}}',
         ],
       },
       {

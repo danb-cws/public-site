@@ -25,7 +25,7 @@ router.get('/', (req, res) => {
     likes: [
       'Eating cheese',
       'Chasing Minne',
-      'Hanging out with Donald',
+      'Tap dancing',
     ],
   });
 });

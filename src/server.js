@@ -58,9 +58,9 @@ if (process.env.NODE_ENV !== 'production') {
   compiler = webpack(webpackConfig);
   compiler.run((err, stats) => {
     if (err) {
-      console.log('*** error webpack prod build: ', err);
+      console.log('!!! error webpack prod build: ', err);
     }
-    // console.log( stats.toJson().assetsByChunkName);
+    // console.log(stats.toJson().assetsByChunkName);
     router.templateConfig.fileHash = stats.toJson().hash;
     startListening();
   });
