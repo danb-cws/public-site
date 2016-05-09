@@ -1,9 +1,8 @@
-export const name = 'Michael';
-
-// require('../sass/greeting.scss'); can use either form
 import '../sass/greeting.scss';
 
-export function sayName() {
+const name = 'Michael';
+
+function sayName() {
   return (`Yo, my name is: ${name}`);
 }
 
