@@ -2,7 +2,7 @@
 
 A bare-bones starter project with server and client code aiming to be an introduction to the Webpack workflow. TBC ;)
 
-###Featuring:
+### Featuring:
 - **Node**
 - **Express** - Node based server
 - **Webpack** - build tool and module bundler [https://webpack.github.io/](https://webpack.github.io/)<br/>
@@ -18,7 +18,7 @@ A bare-bones starter project with server and client code aiming to be an introdu
 - **Gzip** - compression enabled (with optional threshold) for files served by Express
 - **Image optimisation** - small images are inlined as base64 (up to a config threshold filesize), larger images optimised
 
-###Instructions
+### Instructions
 - Ensure you have Node and npm installed (node version set at 5.10.1, amend the "engines" line in package.json if you want to try another version)
 - in the working dir, run in terminal _npm install_
 - for dev build, run _npm run start-dev_
@@ -26,7 +26,7 @@ A bare-bones starter project with server and client code aiming to be an introdu
 - _Ctrl+C_ to stop
 - open _localhost:5000_ in your browser
 
-###Exploring
+### Exploring
 - Dev build will have:
   * Linting run prebuild, errors will show in terminal
   * Hot Module Reload (try editing any module, eg js/testvar.js edit 'name', you will see it immediately reflected in the browser. Also, in the example, sass files have been included as dependancies, so for example try editing the sass variables file, again you will see the browser reflect changes)
@@ -39,10 +39,10 @@ A bare-bones starter project with server and client code aiming to be an introdu
   * css will be written to file and included in the head (in dev build Webpack serves all this from memory)
   * Various other optimisations
   
-###Notes
+### Notes
 - In dev build, Webpack will serve from memory (for this reason, you may notice FOUT). In prod, optimised assets will be served from ./dist/ directory. This will be destroyed on each build. For this reason in dev build there will be NO DIST directory. (This behaviour may have to be revisited if the build gets too slow)
 
-###Gotchas:
+### Gotchas:
 - To pass enviromment variables Windows users will have to amend from export to SET in the scripts block of package.json from eg:
 
     "start-dev": "export NODE_ENV=development&& node ./src/server.js",<br/>to:<br/> 
